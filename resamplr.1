@@ -1,0 +1,43 @@
+.\" RESAMPLR MANPAGE
+.TH RESAMPLR "1" "May 2017" "resamplr VERSION" "User Commands"
+.SH NAME
+resamplr
+.SH DESCRIPTION
+usage: resamplr [\-h] [\-v] [\-\-bitdepth BITDEPTH] [\-\-samplerate SAMPLERATE]
+.IP
+source dest
+.PP
+Resample FLACs intelligently.
+.SS "positional arguments:"
+.TP
+source
+Directory of FLACs to resample.
+.TP
+dest
+Destination directory for resampled FLACs.
+.SS "optional arguments:"
+.TP
+\fB\-h\fR, \fB\-\-help\fR
+show this help message and exit
+.TP
+\fB\-v\fR, \fB\-\-version\fR
+show program's version number and exit
+.TP
+\fB\-\-bitdepth\fR BITDEPTH, \fB\-b\fR BITDEPTH
+Desired bit depth for resampled FLACs. Default: 16
+.TP
+\fB\-\-samplerate\fR SAMPLERATE, \fB\-s\fR SAMPLERATE
+Desired samplerate for resampled FLACs. Default:
+Automatically select 44100 or 48000
+.SH "SEE ALSO"
+The full documentation for
+.B resamplr
+is maintained as a Texinfo manual.  If the
+.B info
+and
+.B resamplr
+programs are properly installed at your site, the command
+.IP
+.B info resamplr
+.PP
+should give you access to the complete manual.
